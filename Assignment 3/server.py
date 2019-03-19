@@ -11,7 +11,7 @@ while True:
 	connectionSocket, addr = sSocket.accept()
 
 	sentence = connectionSocket.recv(1024).decode()
-	capitalizedSentence = str(int(sentence,10)*10)
-	connectionSocket.send(capitalizedSentence.encode())
+	mutipliedSentence = str(int(sentence,10)*10)
+	connectionSocket.send(multipliedSentence.encode())
 
 	connectionSocket.close()
